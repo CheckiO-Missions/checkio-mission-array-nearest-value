@@ -1,7 +1,7 @@
 <body data-author="freeman_lex">
 <div class="question-answer">
     <div class="question">
-        <i>I have no idea how to start solving this mission!</i>
+        I have no idea how to start solving this mission!
     </div>
     <div class="answer">
         <p>
@@ -11,9 +11,7 @@
 </div>
 <div class="question-answer">
     <div class="question">
-        <i>
-            It looks clear, but I need a step-by-step instructions. What should I start from?
-        </i>
+        It looks clear, but I need a step-by-step instructions. What should I start from?
     </div>
     <div class="answer">
         <p>
@@ -28,7 +26,7 @@ return values.sort((a, b) => ...);
 </div>
 <div class="question-answer">
     <div class="question">
-        <i>Ok. How to find distance between an element and the given number?</i>
+        Ok. How to find distance between an element and the given number?
     </div>
     <div class="answer">
         <p>
@@ -42,7 +40,7 @@ Math.abs(s-b);
 </div>
 <div class="question-answer">
     <div class="question">
-        <i>Explain, how to sort elements by their distance to the given number?</i>
+        Explain, how to sort elements by their distance to the given number?
     </div>
     <div class="answer">
         <p>
@@ -58,9 +56,7 @@ return values.sort((a, b) => Math.abs(s-a) - Math.abs(s-b));
 </div>
 <div class="question-answer">
     <div class="question">
-        <i>
-            That is tricky! But what to do, if two elements are on the same distance from the given number?
-        </i>
+        That is tricky! But what to do, if two elements are on the same distance from the given number?
     </div>
     <div class="answer">
         <p>
@@ -79,14 +75,13 @@ return values.sort((a,b) => Math.abs(s-a)-Math.abs(s-b) || a-b);
 </div>
 <div class="question-answer">
     <div class="question">
-        <i>
-            So, how my final solution should look like?
-        </i>
+        So, how my final solution should look like?
     </div>
     <div class="answer">
         <p>
             You have an array, sorted ascending. So the nearest element is the smallest in the array (the leftest). Take it using indexing. You also need to wrap your the code into function expression.
         </p>
+        <div class="spoiler">
         <pre class="brush: javascript">
 function nearestValue(values: number[], s: number): number {
 
@@ -95,24 +90,28 @@ function nearestValue(values: number[], s: number): number {
     return values.sort((a,b) => Math.abs(s-a)-Math.abs(s-b) || a-b).shift();
 }
         </pre>
+        </div>
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        <i>Show me more solutions!<br />
-        'Cause I wanna be a real 🥇 Javascript Hero!</i>
+        Show me more solutions!<br />
+        'Cause I wanna be a real 🥇 Javascript Hero!
     </div>
     <div class="answer">
         <p>Sure, grab it!</p>
         <p>
             In this solution anonymous function is used and squares of differences are used instead of absolute values.
         </p>
+        <div class="spoiler">
         <pre class="brush: javascript">
 var nearestValue = (v, s) => v.sort((a,b) => (s-a)**2 - (s-b)**2 || a-b)[0];
         </pre>
+        </div>
         <p>
             Add the given number into the array, sort it, find and compare two nearest elements to the given number. Notice the multiple ternary operators.
         </p>
+        <div class="spoiler">
         <pre class="brush: javascript">
 function nearestValue(values: number[], s: number): number {
 
@@ -126,12 +125,13 @@ function nearestValue(values: number[], s: number): number {
            y - s >= s - x ? x : y;
 }
         </pre>
+        </div>
         <p><b>Click "Best solutions" an mission menu and see more interesting solutions!</b></p>
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        <i>Thanks! I know and understand more now! Everything works fine!</i>
+        Thanks! I know and understand more now! Everything works fine!
     </div>
     <div class="answer">
         👍 Glad to hear it!
